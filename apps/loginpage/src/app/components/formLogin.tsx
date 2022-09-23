@@ -27,17 +27,6 @@ const StyledWrapperButton = styled.div`
   button {
     margin-top: 1rem;
   }
-  @media (min-width: 1024px) {
-    button {
-      width: 20%;
-      margin-top: 0rem;
-    }
-    display: flex;
-    align-items: center;
-    div {
-      display: flex;
-      align-items: center;
-    }
   }
 `;
 
