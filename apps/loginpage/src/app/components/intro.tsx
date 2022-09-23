@@ -1,5 +1,6 @@
 import { useMemo, useState, useCallback, useEffect } from 'react';
 import styled from 'styled-components';
+import checkTime from '../lib/getTime';
 import { IoMdOpen } from 'react-icons/io';
 
 const StyledIntro = styled.div`
@@ -62,7 +63,7 @@ export function Intro() {
       <p style={{
         color: 'white',
         fontSize: '12px'
-      }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, soluta.</p>
+      }}>Good {checkTime()} let's read our doc.</p>
       <StyledWrapperButton>
         <button style={{
             width: '70%',
@@ -72,7 +73,7 @@ export function Intro() {
             color: 'white',
             fontSize: '20px',
             height: '40px'
-        }}>Read it <a href='/'><IoMdOpen/></a></button>
+        }}>Read<a href='/'><IoMdOpen/></a></button>
       </StyledWrapperButton>
     </StyledIntro>
   );
