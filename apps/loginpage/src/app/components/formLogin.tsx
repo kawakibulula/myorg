@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import useLogin from '../hooks/useLogin';
+import { useContext } from 'react';
+import { thecontext } from '../context/context';
 const StyledFormLogin = styled.div`
   background-color: white;
   max-width: 70%;
@@ -42,7 +43,7 @@ const StyledWrapperButton = styled.div`
 
 export function LoginForm() {
   const { login, submitEmail, submitPassword, email, password } =
-    useLogin();
+    useContext(thecontext);
   return (
     <StyledFormLogin>
       <form
