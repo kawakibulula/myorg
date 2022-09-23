@@ -12,6 +12,11 @@ describe('App', () => {
   it('should have a greeting as the title', () => {
     const { getByText } = render(<App />);
 
-    expect(getByText(/Welcome loginpage/gi)).toBeTruthy();
+    expect(getByText(/welcome/gi)).toBeTruthy();
+  });
+  it('should have a hello text', () => {
+    const { getByText } = render(<App />);
+
+    expect(getByText(/Hello/gi)).toBeTruthy();
   });
 });

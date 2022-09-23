@@ -1,13 +1,13 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import styles from './app.module.css';
-import NxWelcome from './nx-welcome';
-
+import { ContextProvider } from './context/context';
+import LoginPage from './page/loginPage';
 export function App() {
   return (
-    <>
-      <NxWelcome title="loginpage" />
-      <div />
-    </>
+    <ContextProvider>
+      <LoginPage/>
+    </ContextProvider>
+    
   );
 }
 
